@@ -1,46 +1,27 @@
 \documentclass[../main/Feedback.tex]{subfiles}
 \begin{document}
-
-
-
 \section{Introduction}
+	Users often has to fill web pages containing more than 10 forms for example, when registering for a web site, posting classified ad, or sending online insurance claim. Sometimes this is really important in Human computer interaction(HCI) viewpoint, like filling insurance claim forms, and online banking to be intuitive and aiding the user through the process. To achieve that web forms should support the users working memory\cite{nielsen1990heuristic,shneiderman1992designing} by minimizing the effort to perceive, process and respond to the web form. That is why we are interested in measuring the mental demands imposed by the web form filling task. Furthermore, it has been suggested that attractive interfaces increase creativity\cite{norman2002emotion} of the user. Hence, it can be of high value for the researchers to know what workload and emotional state the users are experiencing during interaction with a certain interface.
+	
+	Recently, functional near infrared spectroscopy(fNIRS) has been suggested as a suitable brain imaging method for HCI studies\cite{maior2015examining,solovey2009using,pike2014measuring} because participants can wear it during normal interaction with a computer interface. In addition, the brain scanning device is non-intrusive and relatively resistant to motion artefacts which will not affect task performance and data collected, in contrast to other brain imaging modalities. Moreover, as it has been suggested by cognitive neuroscience studies that the prefrontal cortex(PFC) area of the brain is involved with higher order cognition\cite{braver1997parametric} and emotion processing\cite{damasio1996somatic}. Thus, by placing the fNIRS device on the forehead of individuals we can infer about their level of demand and emotional state.
+	
+	However, according to our knowledge only one study was found\cite{peck2013using} that uses hemodynamic data from fNIRS to compare and evaluate different variations of an interface. Other fNIRS studies experiment with simple tasks, like mental arithmetic, and n-back tasks. Accordingly, we want to implement the fNIRS device in a user trial evaluation study of an web interface because it is often encountered task in our daily lives. 
 
-\section{Figures/Captions}
-
-\begin{figure*}
-  \centering
-  \includegraphics[width=1.75\columnwidth]{../figures/map}
-  \caption{In this image, the map maximizes use of space. You can make
-    figures as wide as you need, up to a maximum of the full width of
-    both columns. Note that \LaTeX\ tends to render large figures on a
-    dedicated page. Image: \ccbynd~ayman on
-    Flickr.}~\label{fig:figure2}
-\end{figure*}
-
- ``Table~\ref{tab:table1}'' or
-``Figure~\ref{fig:figure1}''),
-
-Quotations may be italicized when \textit{``placed inline''}
-
-\begin{quote}
-Longer quotes, when placed in their own paragraph, need not be
-italicized or in quotation marks when indented (Ramon, 39M).
-\end{quote}
-
-\section{Language, Style, and Content}
-
-The written and spoken language of SIGCHI is English. Spelling and
-punctuation may use any dialect of English (e.g., British, Canadian,
-US, etc.) provided this is done consis- tently. Hyphenation is
-optional. To ensure suitability for an international audience, please
-pay attention to the following:
-
-\section{Conclusion}
-
-
-
-
+\subsection{Purpose of study}
+	We aim to find a way to improve web interfaces that has more than 10 forms, and are considered long forms, as this process is often encountered during daily web surfing, for example, when user registers to a new web site, or enter information for financial institutions, like insurance companies and banks. We strive to find more generalizable results that can produce certain web form design guidelines for interacting with long forms. Accordingly, we decided to test the layout of the web forms, and examine how it influences user performance. We also, aim to assess the practicality of fNIRS brain imaging technique in HCI evaluation studies.
+\subsection{Research questions}
+	In this master thesis we aim to answer the following questions:
+	\begin{enumerate}
+		\itemsep0em
+		\item Which of the three layouts elicit the least mental workload and which is more preferred by the users?
+		\item Is fNIRS sensitive method in measuring mental workload changes in web form filling task? 
+		\item Can we detect emotional valence with fNIRS, from web interface that has no emotional cues.
+		\item Is fNIRS brain imaging modality practical to use in HCI evaluation studies?
+	\end{enumerate}		
+\subsection{Industry partner}
+This work has been motivated by the need of entity partner funding my masters course. The industry partner operates an insurance customer relationship management(CRM) software, and it was requested to provide insights in the web form filling process and provide design guidelines.	
+\subsection{Structure of the thesis}
+In the next chapter we will first review the background literature behind usability and web form filling, the concept of mental workload and working memory, emotion processing, and finally, relevant brain sensing techniques. In chapter 3 we will describe the User study, including description of the method we used, and the results obtained. Finally, we will discuss the finding from the experiment and then propose implications for design.
 % just remove comment on last page for ballancing columns.
 %\balance{}
-
 \end{document} 
