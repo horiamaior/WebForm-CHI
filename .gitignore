@@ -18,6 +18,12 @@ $RECYCLE.BIN/
 *.out
 *.pdf
 *.gz
+*.synctex
+*.blg
+*.bbl
+
+
+
 # Windows shortcuts
 *.lnk
 
