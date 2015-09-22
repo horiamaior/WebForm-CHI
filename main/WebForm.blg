@@ -1,5 +1,19 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: WebForm.aux
 The style file: SIGCHI-Reference-Format.bst
-I found no \citation commands---while reading file WebForm.aux
-Database file #1: sample.bib
-(There was 1 error message)
+Database file #1: exmplref.bib
+Warning--no number and no volume in ayazfunctional
+Warning--page numbers missing in both pages and numpages fields in ayazfunctional
+Warning--can't use both volume and number fields in hart2006nasa
+Warning--empty publisher in hart2006nasa
+Warning--empty address in hart2006nasa
+Warning--empty publisher in nielsen1990heuristic
+Warning--empty address in nielsen1990heuristic
+Warning--empty publisher in peck2013using
+Warning--empty address in peck2013using
+Warning--empty publisher in pike2014measuring
+Warning--empty address in pike2014measuring
+Warning--page numbers missing in both pages and numpages fields in pike2014measuring
+Warning--empty address in shneiderman1992designing
+Warning--empty publisher in solovey2009using
+Warning--empty address in solovey2009using
+(There were 15 warnings)

@@ -32,4 +32,139 @@
 \ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
 \ifx \showURL      \undefined \def \showURL       #1{#1}          \fi
 
+\bibitem{ayazfunctional}
+{Hasan Ayaz}. 2010.
+\newblock \showarticletitle{Functional Near Infrared Spectroscopy based Brain
+  Computer Interface}.
+\newblock {\em PhD Thesis, Drexel University, Philadelphia, PA\/} (2010).
+\newblock
+
+
+\bibitem{bradley1994measuring}
+{Margaret~M Bradley} {and} {Peter~J Lang}. 1994.
+\newblock \showarticletitle{Measuring emotion: the self-assessment manikin and
+  the semantic differential}.
+\newblock {\em Journal of behavior therapy and experimental psychiatry\/} {25},
+  1 (1994), 49--59.
+\newblock
+
+
+\bibitem{braver1997parametric}
+{Todd~S Braver}, {Jonathan~D Cohen}, {Leigh~E Nystrom}, {John Jonides},
+  {Edward~E Smith}, {and} {Douglas~C Noll}. 1997.
+\newblock \showarticletitle{A parametric study of prefrontal cortex involvement
+  in human working memory}.
+\newblock {\em Neuroimage\/} {5}, 1 (1997), 49--62.
+\newblock
+
+
+\bibitem{cope1988system}
+{M Cope} {and} {David~T Delpy}. 1988.
+\newblock \showarticletitle{System for long-term measurement of cerebral blood
+  and tissue oxygenation on newborn infants by near infra-red
+  transillumination}.
+\newblock {\em Medical and Biological Engineering and Computing\/} {26}, 3
+  (1988), 289--294.
+\newblock
+
+
+\bibitem{cui2010functional}
+{Xu Cui}, {Signe Bray}, {and} {Allan~L Reiss}. 2010.
+\newblock \showarticletitle{Functional near infrared spectroscopy (NIRS) signal
+  improvement based on negative correlation between oxygenated and deoxygenated
+  hemoglobin dynamics}.
+\newblock {\em Neuroimage\/} {49}, 4 (2010), 3039--3046.
+\newblock
+
+
+\bibitem{damasio1996somatic}
+{Antonio~R Damasio}, {BJ Everitt}, {and} {D Bishop}. 1996.
+\newblock \showarticletitle{The somatic marker hypothesis and the possible
+  functions of the prefrontal cortex [and discussion]}.
+\newblock {\em Philosophical Transactions of the Royal Society B: Biological
+  Sciences\/} {351}, 1346 (1996), 1413--1420.
+\newblock
+
+
+\bibitem{hart2006nasa}
+{Sandra~G Hart}. 2006.
+\newblock \showarticletitle{NASA-task load index (NASA-TLX); 20 years later}.
+  In {\em Proceedings of the human factors and ergonomics society annual
+  meeting}, Vol.~50. Sage Publications, 904--908.
+\newblock
+
+
+\bibitem{nasatlx}
+{Sandra~G Hart} {and} {Lowell~E Staveland}. 1988.
+\newblock \showarticletitle{Development of NASA-TLX (Task Load Index): Results
+  of empirical and theoretical research}.
+\newblock {\em Advances in psychology\/}  {52} (1988), 139--183.
+\newblock
+
+
+\bibitem{fraps}
+{Beepa~Pty Ltd}. 2004 (accessed July 13, 2015).
+\newblock FRAPS game capture video recorder fps viewer.
+\newblock \url{http://www.fraps.com/}.   (2004 (accessed July 13, 2015)).
+\newblock
+
+
+\bibitem{maior2015examining}
+{H Maior}, {Matthew Pike}, {Sarah Sharples}, {and} {Max~L Wilson}. 2015.
+\newblock \showarticletitle{Examining the reliability of using fNIRS in
+  realistic hci settings for spatial and verbal tasks}.
+\newblock {\em Proceedings of CHI\/}  {15} (2015), 3807--3816.
+\newblock
+
+
+\bibitem{nielsen1990heuristic}
+{Jakob Nielsen} {and} {Rolf Molich}. 1990.
+\newblock \showarticletitle{Heuristic evaluation of user interfaces}. In {\em
+  Proceedings of the SIGCHI conference on Human factors in computing systems}.
+  ACM, 249--256.
+\newblock
+
+
+\bibitem{norman2002emotion}
+{Don Norman}. 2002.
+\newblock \showarticletitle{Emotion \& design: attractive things work better}.
+\newblock {\em interactions\/} {9}, 4 (2002), 36--42.
+\newblock
+
+
+\bibitem{peck2013using}
+{Evan M~M Peck}, {Beste~F Yuksel}, {Alvitta Ottley}, {Robert~JK Jacob}, {and}
+  {Remco Chang}. 2013.
+\newblock \showarticletitle{Using fNIRS brain sensing to evaluate information
+  visualization interfaces}. In {\em Proceedings of the SIGCHI Conference on
+  Human Factors in Computing Systems}. ACM, 473--482.
+\newblock
+
+
+\bibitem{pike2014measuring}
+{Matthew Pike}, {Horia~A Maior}, {Martin Porcheron}, {Sarah Sharples}, {and}
+  {Max~L Wilson}. 2014.
+\newblock \showarticletitle{Measuring the Effect of Think Aloud Protocols on
+  Workload using fNIRS}. In {\em ACMCHI}.
+\newblock
+
+
+\bibitem{shneiderman1992designing}
+{Ben Shneiderman}. 1992.
+\newblock {\em Designing the user interface: strategies for effective
+  human-computer interaction}. Vol.~3.
+\newblock Addison-Wesley Reading, MA. 60--63 pages.
+\newblock
+
+
+\bibitem{solovey2009using}
+{Erin~Treacy Solovey}, {Audrey Girouard}, {Krysta Chauncey}, {Leanne~M
+  Hirshfield}, {Angelo Sassaroli}, {Feng Zheng}, {Sergio Fantini}, {and}
+  {Robert~JK Jacob}. 2009.
+\newblock \showarticletitle{Using fNIRS brain sensing in realistic HCI
+  settings: experiments and guidelines}. In {\em Proceedings of the 22nd annual
+  ACM symposium on User interface software and technology}. ACM, 157--166.
+\newblock
+
+
 \end{thebibliography}
