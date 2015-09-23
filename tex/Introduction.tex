@@ -17,22 +17,22 @@ One of the variations of the web form examine whether summarizing at the beginni
 The second, is looking at ways to make the form easier to fill and clearer by dividing the form fields into separate, sequential pages.
 
 \subsection{Usability and Web form filling}	
-Web form filling is often encountered activity in daily surfing of web users, however, according to our knowledge, there is scarce of empirical research in the Human Computer Interaction(HCI) literature for this topic. 
+Web form filling is often encountered activity in daily surfing of web users, however, according to our knowledge, there is scarce of empirical research in the Human Computer Interaction(HCI) literature for this topic.
 Most of the research on web form filling and design is focused in optimizing the experience and accessibility for elderly population\cite{sayago2012selective,chadwick2003web,lines2006online,sayago2007some}.
-However, Wästlund et al \cite{Wastlund20081229} compared two web page layouts - one in which all the text is on the same page, and one where the text is separated in four pages. 
-The authors concluded that users experienced less workload with the divided web form. 
+However, Wästlund et al \cite{Wastlund20081229} compared two web page layouts - one in which all the text is on the same page, and one where the text is separated in four pages.
+The authors concluded that users experienced less workload with the divided web form.
 Further research \cite{jarrett2009forms,wroblewski2008web} also suggest splitting long web forms into several pages, in order to improve the process.
 
 Further studies suggest that the longer it takes for a task to be completed (short or long term) the more the perceived frustration users experience \cite{mendoza2005usability,bessiere2004social}.
 Therefore, time to complete also needs to be considered in this study.
 
-%In reviewing positive and negative affect and their implications for design Norman \cite{norman2002emotion} proposes that ``Positively valenced affect broadens the thought processes hence, enhanced creativity''. Therefore, increase in task performance should be observed when a user has positively valenced affect towards certain interface. Suggesting that emotional valence plays pivotal role in task performance. 
+%In reviewing positive and negative affect and their implications for design Norman \cite{norman2002emotion} proposes that ``Positively valenced affect broadens the thought processes hence, enhanced creativity''. Therefore, increase in task performance should be observed when a user has positively valenced affect towards certain interface. Suggesting that emotional valence plays pivotal role in task performance.
 
-Because of insufficiency of relevant literature on the web form filling and design we are going to examine general usability guidelines and recommendations as they are widely accepted by the Human Computer Interaction researchers. 
+Because of insufficiency of relevant literature on the web form filling and design we are going to examine general usability guidelines and recommendations as they are widely accepted by the Human Computer Interaction researchers.
 The two most popular usability heuristics are those of Nielsen\cite{nielsen1990heuristic}, and Shneidermann\cite{shneiderman1992designing}.
 They express similar suggestions, such as maintain consistency, provide feedback, support expert users, prevent and optimize error messages, provide help documentation, permit easy reversal of information, and minimize working memory load.
 Consequently, the design of the tested variations in this study is informed by them.
-Also, because both heuristics advocate minimizing the load on working memory we consider that reducing it will provide better user experience. 
+Also, because both heuristics advocate minimizing the load on working memory we consider that reducing it will provide better user experience.
 In addition, because usability of certain interface depends on the context, user differences, and that there is not perfect solution to a interface problem, and designers often have to make tradeoffs\cite{norman1986user}, we will rely on cognitive science in order, to predict which layout is more appropriate.
 
 
@@ -42,25 +42,36 @@ Sharples and Megaw \cite{wilsonChapter2015evaluation} described the effect of wo
 They also discuss how user performance could be influenced by the mental workload, pointing out two causes: underload and overload.
 A number of subjective and objective methods have been proposed for evaluating users workload, including primary and secondary task analysis, subjective questionnaires and physiological techniques.
 
+Psychophysical measures are used to give objective data about mental workload by not relying on subjective scales or performance measures.
+They can be obtained by recording cardiac activity [REF], electrodermal activity [REF], eye function [REF] or imaging the brain [REF].
+These techniques detect the  change in the arousal from the autonomic nervous system level which can be inferred to as mental workload.
+However, different psychophysical measures capture different aspects mental workload \cite{cain2007review}, therefore consideration should be put in choosing the most appropriate measure for the given task.
 
 Recent research has proved functional near infrared spectroscopy(fNIRS) a suitable brain imaging method for HCI studies \cite{maior2015examining,solovey2009using,pike2014measuring} as it provides useful information about the user while allowing normal interaction with a computer system.
-fNIRS uses blood oxygenation, rather than electrical levels, for determining the activation of
-areas in the brain, where more blood flow indicates higher activity.
-This makes it non-invasive, portable, inexpensive and suitable for periods of extended monitoring relative to other neuroimaging techniques. NIRS measures the hemodynamic response the delivery of blood to active neuronal tissues and it is designed to be placed directly upon a participant's scalp, typically targeting the prefrontal cortex (PFC) - see Figure REF.
+fNIRS uses blood oxygenation, rather than electrical levels, for determining the activation of areas in the brain, where more blood flow indicates higher activity.
+This makes it non-invasive, portable, inexpensive and suitable for periods of extended monitoring relative to other neuroimaging techniques. 
+NIRS measures the hemodynamic response the delivery of blood to active neuronal tissues and it is designed to be placed directly upon a participant's scalp, typically targeting the prefrontal cortex (PFC) - see Figure REF.
 It has been suggested by cognitive neuroscience studies that PFC is involved in higher order cognition \cite{braver1997parametric} and emotion processing \cite{damasio1996somatic}.
 
 Peck et al \cite{peck2013using} used hemodynamic data from fNIRS to compare and evaluate different variations of an interface.
-He also found a correlation between the fNIRS data and NASA-TLX subjective workload questionnaire which was further confirmed by Maior et al \cite{maior2014continuous}.
+He found a correlation between the fNIRS data and NASA-TLX subjective workload questionnaire which was further confirmed by Maior et al \cite{maior2014continuous}.
 
-Mental workload and emotional valence are of high interest in HCI evaluations because measuring workload gives us important information about the task demands and also, knowing whether a user is feeling positive or negative towards an interface or task may give us valuable information about their general preferences. Furthermore, Nielsen\cite{nielsen1994measuring} suggested that user preferences correlate with user performance, thus we can rely solely on user preferences, however this is not always the case. Hence, Nielsen and Levy \cite{nielsen1994measuring} advise researchers to use combination of subjective and objective data in usability studies, in order to identify bias and provide richer information about the process. Accordingly, we have decided to employ user trials(subjective data) combined with psychophysiological measurements(objective data).
+Nielsen \cite{nielsen1994measuring} suggested that user preference correlates with user performance. 
+However, Nielsen and Levy \cite{nielsen1994measuring} advise researchers to use combination of subjective and objective data in usability studies, in order to identify bias and provide richer information about the process. Accordingly, subjective measurements are considered.
 
-\subsubsection{Subjective measures}
-Subjective measures use rating scale and are based on operator opinion of their perceived workload during or after completion of task. They are preferred method for WL estimation because they are easy to administer, cheap, and with high face validity. They are classified as uni dimensional and multidimensional which consists of single subjective scale or multiple scales of workload, accordingly. From the unidimensional subjective measures the Cooper-Harper\cite{cooper1969use} is the most popular among ergonomists. However, it is designed for the aircraft domain, and therefore a modified cooper-Harper scale\cite{wierwille1983validated} was created for use in other domains. However, as mental workload is influenced by different environmental and personal factors\cite{rouse1993modeling}, therefore the concept of MW should be considered as multidimensional concept, in order to improve diagnosticity. Accordingly, multi-dimensional subjective scales should be used to better understand the aspects of MW. The most used scales are NASA-TLX\cite{nasatlx}, SWAT\cite{reid1988subjective} and Workload profile\cite{tsang1996diagnosticity}. NASA-TLX is based on rigorous laboratory research, and it is relatively easy to administer. In addition, a single measure of workload can be weighted, although it is not necessarily required because there is high correlation between weighted and unweighed results\cite{byers1988workload}.
-The SWAT subjective scale is also widely used, however the process of implementation is laborious and more complex than the other subjective scales. The other popular scale is Workload profile(WP)\cite{tsang1996diagnosticity} scale which is basen on the Wickens multiple resources model, and asks questions about each of the four dimensions proposed by the theory. Hence, it is very useful in dual task experiments. Finally, Longo et al. \cite{longo2012importance} compared the three measures mentioned above in a web browsing/searching task, and observed correlations in the results of the three measures claiming that they measure the same concept of mental workload.\\
-\subsubsection{Psychophysical measures}
-Psychophysical measures are used to give objective data about mental workload by not relying on subjective scales or performance measures . They can be obtained by recording cardiac activity, electrodermal activity, eye function or imaging the brain. These techniques detect the  change in the arousal from the autonomic nervous system level which can be inferred to as mental workload. However, different psychophysical measures capture different aspects mental workload\cite{cain2007review}, therefore consideration should be put in choosing the most appropriate measure for the given task. \\
-%Mean heart rate(HR) and heart rate variability(HRV) are one of the most used techniques to infer arousal because it is relatively cheap and easy to administer. However, HR not always correlates to subjective measures of MW\cite{haapalainen2010psycho} and because of this HRV can be considered as more valid measure. Moreover, the beat to beat interval of the heart can be measured using different statistical approaches\cite{billman2011heart}, like, standard deviation from heart beat intervals. Measurements of eye activity, like blink rate, pupil diameter are also being found to correlate to MW. Furthermore, increase in pupil diameter is correlated to rise in arousal \cite{kahneman1973attention}, and Beatty claimed that it has high sensitivity \cite{beatty1982task} and it can be used to distinguish between data-limited and resource limited processing, which can make it very useful in the HCI field. However, incoming light at the eye can change the pupil diameter, which is a process unrelated to the task, thus influencing the measurements, therefore it is suitable for experiments in controlled environment. \\
-Finally, a number of brain imaging techniques are used to obtain measurements from the brain activity, including electroencephalography(EEG), functional near-infrared spectroscopy(fNIRS), functional magnetic resonance imaging(fMRI), however these will be discussed later in section "Brain sensing".
+Subjective measures of workload are techniques based upon user opinion over the perceived workload during or after the completion of a task. 
+They tend to be the most used and accepted measures due to their simplicity and cheap running costs, and high face validity.
+Subjective measures could be classified in two types: uni and multi-dimensional.
+Between the uni-dimensional scales, Cooper-Harper \cite{cooper1969use} is one of the most popular among ergonomists.
+It was originally designed for the aircraft domain, however a modified cooper-Harper scale\cite{wierwille1983validated} was created for application in all other fields. 
+As workload is influenced by different environmental and personal factors \cite{rouse1993modeling}, the concept of workload should be considered as multidimensional concept, in order to improve diagnosticity.
+NASA-TLX \cite{nasatlx}, SWAT \cite{reid1988subjective} and Workload profile \cite{tsang1996diagnosticity} are widely used multidimensional workload scales. 
+NASA-TLX is based on rigorous laboratory research, and it is relatively easy to administer. 
+In addition, a single measure of workload can be weighted, although it is not necessarily required because there is high correlation between weighted and unweighed results \cite{byers1988workload}.
+The SWAT subjective scale is also widely used, however the process of implementation is laborious and more complex than the other subjective scales. 
+The other popular scale is Workload profile(WP)\cite{tsang1996diagnosticity} scale which is basen on the Wickens multiple resources model, and asks questions about each of the four dimensions proposed by the theory.
+Hence, it is very useful in dual task experiments. Finally, Longo et al. \cite{longo2012importance} compared the three measures mentioned above in a web browsing/searching task, and observed correlations in the results of the three measures claiming that they measure the same concept of mental workload.\\
+
 
 
 
