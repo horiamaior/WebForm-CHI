@@ -4,34 +4,59 @@
 %We used fNIRS because it is non-invasive with low sensitivity to motion artefacts, and with high temporal resolution, thus suitable for user trials. We combine the fNIRS, as an objective measure of mental workload with the subjective NASA-TLX as they are validated and reliable methods \cite{maior2015examining,hart2006nasa}. In addition, we decided to measure the emotional valence with the SAM questionnaire. This way we gather comprehensive information about how participants perceive the interfaces and relate it to the psychophysiological data. Furthermore, fNIRS is novel method for conducting usability studies, and as such we aim to assess its practicality.
 
 \subsection{Participants}
-A total of 15 right handed participants (5 female) with mean age of 26 (SD = 4.71) took part in the study. All of the participant were healthy, however only one pointed that it suffers ``Von Willebraud disease'' which impairs blood's ability to clot, and the data from the psychophysiological measures was excluded. All participants had normal or corrected to normal vision, and report no history of brain damage. Also, 14 of them reported they have advanced computer literacy, 5 of them stated average computer literacy and 1 did not answer this question. All of the participants were current or graduated students. The ethics committee of the University of Nottingham approved this study. Informed consent was obtained from the participants and they were compensated with £10 Amazon voucher.
-\subsection{Apparatus}
-\subsubsection{Laptop computer}
-The experiment was executed on 15" laptop, HP probook 450 with screen resolution 1366x768. An external mouse was attached, which participants used during the process. The participant was presented with a screen with links to the three different videos and web forms. They were instructed by the researcher to manually start certain condition or video.
-\subsubsection{fNIRS}
-Hemodynamic data was recorded using the fNIRS300 device along with the COBI studio recording software developed by Biopac Systems inc. The device consists of a headband with 4 infrared LED emitters and 10 infrared detectors as it can be seen from Figure \ref{fig:source-detector-diagram}. 				
+A total of 15 right handed participants (5 female) with mean age of 26 (SD = 4.71) took part in the study. 
+%All of the participant were healthy, however only one pointed that it suffers ``Von Willebraud disease'' which impairs blood's ability to clot, and the data from the psychophysiological measures was excluded. 
+All participants had normal or corrected to normal vision, and report no history of brain damage. 
+%Fourteen of them reported they have advanced computer literacy, five of them stated average computer literacy and one did not answer this question. 
+%All of the participants were current or graduated students. The ethics committee of the University of Nottingham approved this study. 
+Informed consent was obtained from the participants and they were compensated with gift vouchers.
+
+\subsection{Layout variations of web forms}
+A total of 3 HTML/CSS variations of a standard web form for insurance claiming were produced - See Figure \ref{fig:layout-variations}.
+They were created to resemble an actual online insurance claim form. 
+All conditions were divided on three main parts: Personal information, Accident information and Summary of accident. 
+The personal information part consisted of five individual forms, namely: First name, Last name, Date of birth, Email, You are (choose type of stakeholder, which was option field). 
+The accident information consisted of one text input field (Today's date), four drop down lists (Number of passengers, Number of cars involved in the accident, Was anyone injured in this incident, and Was the accident caused by your fault), and a checkbox form for selecting which areas of the vehicle were damaged.
+The third division consisted of a text-area, where participants had to write a description of the accident.
+The first investigated layout, referred as index1, consisted of the three division areas laid out with the summary of accident at the end.
+The second, index2 contained the summary of the accident at the top of the page.
+The third layout, referred as index 3 had the same order as index1, with each division part situated on separate page (personal information on page 1, accident information on page 2 and summary on page 3).
+Users navigated between the three pages using a submit button with the label``Next''.
+On top of each form on index3, a progress bar indicated how many steps the web form has.
+
+
+\subsection{fNIRS}
+Hemodynamic data was recorded using the fNIRS300 device along with the COBI studio recording software developed by Biopac Systems inc. 
+The device consists of a headband with 4 infrared LED emitters and 10 infrared detectors as it can be seen from Figure \ref{fig:source-detector-diagram}. 				
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.7\linewidth]{../figures/source-detector-diagram}
 	\caption[fNIRS source-detector diagram]{The spatial arrangement of the source-detector pars placed on participants forehead.}
 	\label{fig:source-detector-diagram}
 \end{figure}
-They operated on 730nm and 850nm wavelengths. The combination between them was used to calculate 16 channels which can measure the associated Hbo and Hbr concentration in the PFC. The fNIRS device was placed on the forehead of the participants targeting the dorsolateral(BA 9/46) and orbitofrontal(BA 10) cortices.
-\subsection{Materials}
-\subsubsection{NASA-TLX}
-The NASA-TLX\cite{nasatlx} is multidimensional subjective scale and it is used as a tool for assessing operator workload based weighted average of its six scales. The individual scales are presented in the following order: Mental demand, Physical demand, Temporal demand, Performance, Effort, and Frustration. We used the paper version of the questionnaire. The NASA-TLX measures were obtained from participants each time after completing one of the web form conditions. We did not follow the weighting procedure because it was time consuming, and instead we calculated the mean values of all individual subscales, which is suggested to be also, a valid measure\cite{hart2006nasa}, and we refer to this variable as ``total tlx''.
-\subsubsection{Self assessment manikin scale (SAM)}
-Self assessment manikin\cite{bradley1994measuring} is a two dimensional scale for measuring the perceived emotional valence and arousal. We implemented the 5 point version of it. The participants were asked to fill the questionnaire after each video watched. First they state their emotional valence(negative or positive) by choosing between 1 and 5, where 5 is strongly perceived positive emotion, and 1 is considered strong negative emotion. Then, they fill the arousal level scale, where 1 indicates low perceived arousal or boredom, and 5 signifies high perceived arousal or high level of excitement. Each of the subscales is supported by image visualisations illustrating the affective state.
-\subsubsection{Layout variations of web forms}
+They operated on 730nm and 850nm wavelengths. 
+The combination between them was used to calculate 16 channels which can measure the associated Hbo and Hbr concentration in the PFC. 
+The fNIRS device was placed on the forehead of the participants targeting the dorsolateral(BA 9/46) and orbitofrontal(BA 10) cortices.
 
-A total of 3 HTML/CSS variations of a standard web form for insurance claiming were produced. A generalized sketch is depicted in Figure \ref{fig:layout-variations}. They were created to resemble an actual online insurance claim form. All of the conditions were divided on 3 main divisions: Personal information, Accident information and Summary of accident. The personal information division consisted of 5 individual forms, namely: First name, Last name, Date of birth, Email, You are(choose type of stakeholder, which was option field). The accident information consisted of one text input field(Today's date), four drop down lists(Number of passengers, Number of cars involved in the accident, Was anyone injured in this incident, and Was the accident caused by your fault), and a checkbox form for selecting which areas of the vehicle were damaged. Lastly, the third division consisted of a text-area, where participants had to write a description of the accident. The first version or the control version, referred as index1, consisted of the 3 division areas laid out in the order that was described here, namely, at the top of the page is the personal information, followed by accident information and lastly summary of accident. In the second web form, which we refer to as index2, the summary of accident area was placed on the top of the page, followed by personal and accident information, accordingly. The third condition, referred as index 3 had the same order as index1, however each division area was situated on separate page, and consisted of total 3 pages. Users navigated between the three pages using a submit button with the label``Next''. Also, on the top of the form below the heading there was a progress feedback text indicating of how many steps the web form consisted. For more detailed information, the three web form conditions can be viewed in the attached zip file, that contains all the data.
-\subsubsection{Sound recording}
+\subsection{NASA-TLX}
+To assess operator perceived workload we used the paper version of the multidimensional subjective workload scale NASA-TLX \cite{nasatlx}.
+The individual scales are presented in the following order: Mental demand, Physical demand, Temporal demand, Performance, Effort, and Frustration. 
+The NASA-TLX measures were obtained from participants after completing each web form conditions. We did not follow the weighting procedure because it was time consuming, and instead we calculated the mean values of all individual subscales, which is suggested to be also, a valid measure\cite{hart2006nasa}, and we refer to this variable as ``total tlx''.
+
+\subsection{Self assessment manikin scale (SAM)}
+Self assessment manikin\cite{bradley1994measuring} is a two dimensional scale for measuring the perceived emotional valence and arousal. We implemented the 5 point version of it. The participants were asked to fill the questionnaire after each video watched. First they state their emotional valence(negative or positive) by choosing between 1 and 5, where 5 is strongly perceived positive emotion, and 1 is considered strong negative emotion. Then, they fill the arousal level scale, where 1 indicates low perceived arousal or boredom, and 5 signifies high perceived arousal or high level of excitement. Each of the subscales is supported by image visualisations illustrating the affective state.
+
+\subsection{Audio recording}
 The participants voice was recorded during the experiment using researchers mobile phone. The data was used to transcribe the user comments.
-\subsubsection{Video clips of auto accidents}
+
+\subsection{Video clips of auto accidents}
 Three video clips of automotive accidents were selected, in order to simulate the conditions before the filling of insurance claim. The video clips of the accidents were chosen to be lightweight avoiding any scenes of gore, injured bodies, or fatalities. All of the accidents happened in low speed. One of the clips has a duration of minute and a half, while the others were half a minute long. \textbf{The three videos can be seen in the attached zip file.}
+
 \subsection{Design}
 The study used repeated measures within subjects design. The depended variable was the mental workload, and the independent variable was the layout of the three web forms. The control condition was index1. Before the start of each web form, a video of road accident was played. The three variations of videos and the web forms were counterbalanced using Latin square rotation, in order to avoid learning effects from the order of presentation of the video clips.
 \subsection{Procedure}
+Each participant was presented with a screen with links to the three different videos and web forms. They were instructed by the researcher to manually start certain condition or video.
+
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.8\linewidth]{../figures/study-procedure}
