@@ -5,28 +5,48 @@
 One process that is time consuming and often one we cannot avoid is filling web forms with information.
 Whether you register with a new website, online banking or you are completing your tax return online, this process could consume a significant amount of stress, especially if it is not designed carefully.
 From a Human Computer Interaction (HCI) perspective the forms should be designed so they are intuitive, aiding users trough the filling process.
-A process or task that demands the user excessively exceeding their limited capacity could cause anxiety, while a repetitive task that does not utilize a person’s mental or physical resources may result in boredom and apathy \cite{afergan2014dynamic}. 
-Web form filling tents to be a repetitive task which sometimes can become automatic. 
+A process or task that demands the user excessively exceeding their limited capacity could cause anxiety, while a repetitive task that does not utilize a person's mental or physical resources may result in boredom and apathy \cite{afergan2014dynamic}.
+Web form filling tents to be a repetitive task which sometimes can become automatic.
 If users reach such state, they might not only dislike the process or task of form filling, but they are also prone to errors \cite{pekrun2010boredom}.
 It is therefore important in the field of HCI evaluation and usability to understand users' capabilities and limitations, in order to assess the demands placed upon them.
 
 
-Our aim of the study is to evaluate a web form filling interface for the insurance domain, and more precisely, online auto insurance claim process.
+The aim of the study is to evaluate a web form filling interface for the insurance domain, and more precisely, online auto insurance claim process.
 We therefore evaluate tree variations in layout of the insurance claim form and examine the effects of web form filling on users preference, workload and performance.
-One of the variations of the web form examine whether summarizing at the beginning of an insurance claim form might make the whole process easier. 
+One of the variations of the web form examine whether summarizing at the beginning of an insurance claim form might make the whole process easier.
 The second, is looking at ways to make the form easier to fill and clearer by dividing the form fields into separate, sequential pages.
+
+\subsection{Usability and Web form filling}	
+Web form filling is often encountered activity in daily surfing of web users, however, according to our knowledge, there is scarce of empirical research in the Human Computer Interaction(HCI) literature for this topic. 
+Most of the research on web form filling and design is focused in optimizing the experience and accessibility for elderly population\cite{sayago2012selective,chadwick2003web,lines2006online,sayago2007some}.
+However, Wästlund et al \cite{Wastlund20081229} compared two web page layouts - one in which all the text is on the same page, and one where the text is separated in four pages. 
+The authors concluded that users experienced less workload with the divided web form. 
+Further research \cite{jarrett2009forms,wroblewski2008web} also suggest splitting long web forms into several pages, in order to improve the process.
+
+Further studies suggest that the longer it takes for a task to be completed (short or long term) the more the perceived frustration users experience \cite{mendoza2005usability,bessiere2004social}.
+Therefore, time to complete also needs to be considered in this study.
+
+%In reviewing positive and negative affect and their implications for design Norman \cite{norman2002emotion} proposes that ``Positively valenced affect broadens the thought processes hence, enhanced creativity''. Therefore, increase in task performance should be observed when a user has positively valenced affect towards certain interface. Suggesting that emotional valence plays pivotal role in task performance. 
+
+Because of insufficiency of relevant literature on the web form filling and design we are going to examine general usability guidelines and recommendations as they are widely accepted by the Human Computer Interaction researchers. 
+The two most popular usability heuristics are those of Nielsen\cite{nielsen1990heuristic}, and Shneidermann\cite{shneiderman1992designing}.
+They express similar suggestions, such as maintain consistency, provide feedback, support expert users, prevent and optimize error messages, provide help documentation, permit easy reversal of information, and minimize working memory load.
+Consequently, the design of the tested variations in this study is informed by them.
+Also, because both heuristics advocate minimizing the load on working memory we consider that reducing it will provide better user experience. 
+In addition, because usability of certain interface depends on the context, user differences, and that there is not perfect solution to a interface problem, and designers often have to make tradeoffs\cite{norman1986user}, we will rely on cognitive science in order, to predict which layout is more appropriate.
+
 
 \subsubsection{Measuring Mental Workload}
 The concept has been explained differently by different authors.
-Sharples and Megaw \cite{wilsonChapter2015evaluation} described the effect of workload as ``the relationship between primary task performance and the resources demanded by the primary task''. 
-They also discuss how user performance could be influenced by the mental workload, pointing out two causes: underload and overload. 
+Sharples and Megaw \cite{wilsonChapter2015evaluation} described the effect of workload as ``the relationship between primary task performance and the resources demanded by the primary task''.
+They also discuss how user performance could be influenced by the mental workload, pointing out two causes: underload and overload.
 A number of subjective and objective methods have been proposed for evaluating users workload, including primary and secondary task analysis, subjective questionnaires and physiological techniques.
 
 
 Recent research has proved functional near infrared spectroscopy(fNIRS) a suitable brain imaging method for HCI studies \cite{maior2015examining,solovey2009using,pike2014measuring} as it provides useful information about the user while allowing normal interaction with a computer system.
 fNIRS uses blood oxygenation, rather than electrical levels, for determining the activation of
-areas in the brain, where more blood flow indicates higher activity. 
-This makes it non-invasive, portable, inexpensive and suitable for periods of extended monitoring relative to other neuroimaging techniques. NIRS measures the hemodynamic response the delivery of blood to active neuronal tissues and it is designed to be placed directly upon a participant's scalp, typically targeting the prefrontal cortex (PFC) - see Figure REF. 
+areas in the brain, where more blood flow indicates higher activity.
+This makes it non-invasive, portable, inexpensive and suitable for periods of extended monitoring relative to other neuroimaging techniques. NIRS measures the hemodynamic response the delivery of blood to active neuronal tissues and it is designed to be placed directly upon a participant's scalp, typically targeting the prefrontal cortex (PFC) - see Figure REF.
 It has been suggested by cognitive neuroscience studies that PFC is involved in higher order cognition \cite{braver1997parametric} and emotion processing \cite{damasio1996somatic}.
 
 Peck et al \cite{peck2013using} used hemodynamic data from fNIRS to compare and evaluate different variations of an interface.
@@ -42,13 +62,7 @@ Psychophysical measures are used to give objective data about mental workload by
 %Mean heart rate(HR) and heart rate variability(HRV) are one of the most used techniques to infer arousal because it is relatively cheap and easy to administer. However, HR not always correlates to subjective measures of MW\cite{haapalainen2010psycho} and because of this HRV can be considered as more valid measure. Moreover, the beat to beat interval of the heart can be measured using different statistical approaches\cite{billman2011heart}, like, standard deviation from heart beat intervals. Measurements of eye activity, like blink rate, pupil diameter are also being found to correlate to MW. Furthermore, increase in pupil diameter is correlated to rise in arousal \cite{kahneman1973attention}, and Beatty claimed that it has high sensitivity \cite{beatty1982task} and it can be used to distinguish between data-limited and resource limited processing, which can make it very useful in the HCI field. However, incoming light at the eye can change the pupil diameter, which is a process unrelated to the task, thus influencing the measurements, therefore it is suitable for experiments in controlled environment. \\
 Finally, a number of brain imaging techniques are used to obtain measurements from the brain activity, including electroencephalography(EEG), functional near-infrared spectroscopy(fNIRS), functional magnetic resonance imaging(fMRI), however these will be discussed later in section "Brain sensing".
 
-\subsection{Usability and Web form filling}	
-Web form filling is often encountered activity in daily surfing of web users, however, according to our knowledge, there is scarce of empirical research in the Human Computer Interaction(HCI) literature for this topic. First, a study by Wästlund\cite{Wastlund20081229} compared two web page layouts - one that all the text is in the same page, and one where the text is separated in four pages. Authors concluded that users experienced less workload with the divided web form(4 pages), compared to the single page web form. Second, two books specially written for web form filling design\cite{jarrett2009forms,wroblewski2008web} suggest splitting long web forms into several pages, in order to improve the process. Lastly, most of the research on web form filling and design is focused in optimizing the experience and accessibility for elderly population\cite{sayago2012selective,chadwick2003web,lines2006online,sayago2007some}.
 
-
-In reviewing positive and negative affect and their implications for design Norman\cite{norman2002emotion} proposes that ``Positively valenced affect broadens the thought processes hence, enhanced creativity''. Therefore, increase in task performance should be observed when a user has positively valenced affect towards certain interface. Suggesting that emotional valence plays pivotal role in task performance. A couple of studies suggest that the longer it takes for a task(short or long term) to be completed the more the perceived frustration the users experience increases\cite{mendoza2005usability,bessiere2004social}. Therefore, we should aim to minimize frustration by reducing the time to complete a task.
-
-Because of insufficiency of relevant literature on the web form filling and design we are going to examine general usability guidelines and recommendations as they are widely accepted by the Human Computer Interaction researchers. The two most popular usability heuristics are those of Nielsen\cite{nielsen1990heuristic}, and Shneidermann\cite{shneiderman1992designing}. They express similar suggestions, like, maintain consistency, provide feedback, support expert users, prevent and optimize error messages, provide help documentation, permit easy reversal of information, and minimize working memory load. Consequently, the design of the tested variants in the usability study in chapter 3 is informed by them. Also, because both heuristics advocate minimizing the load on working memory we consider that reducing it will provide better user experience. In addition, because usability of certain interface depends on the context, user differences, and that there is not perfect solution to a interface problem, and designers often have to make tradeoffs\cite{norman1986user}, we will rely on cognitive science in order, to predict which layout is more appropriate.
 
 %Other fNIRS studies experiment with simple tasks, like mental arithmetic, and n-back tasks. Accordingly, we want to implement the fNIRS device in a user trial evaluation study of an web interface because it is often encountered task in our daily lives.
 
