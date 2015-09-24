@@ -2,10 +2,10 @@
 \begin{document}
 \section{Introduction}
 One process that is time consuming, and often one that we cannot avoid, is filling web forms with information.
-Whether mundane, like registering with a new website, procedural, like online banking, in complex and important, like completing a tax return, we encouter it frequently, if not many times a day. Complex forms, like tax returns and car insurance claims, can be very difficult for users, if not also creating a significant amount of stress.
-From a Usability perspective, the forms should be designed so they are intuitive and easy to use, aiding users through the filling process, to helping them avoid making errors. Although, usability has many facets \cite{preece1994human}, one concern is for the mental workload of the users \cite{bevan1997methods}, which is typically measured using retrospective-completed subjective forms \cite{nasa-tlx}. In this paper, however, we explore the use of an concurrent objective measure of mental workload, fNIRS. Although research has demonstrated that this technology is suitable for user study conditions, the evidence has been based upon constrained psychology tasks like N-Back tests \cite{herff2013mental,ayaz2007detecting,molteni2008activation}. Here, we demonstrate that fNIRS can be easily integrated into typical usability testing, as we compare alternatives designs for an online insurance claim form.
+Whether mundane, like registering with a new website, procedural, like online banking, in complex and important, like completing a tax return, we encounter it frequently, if not many times a day. Complex forms, like tax returns and car insurance claims, can be very difficult for users, if not also creating a significant amount of stress.
+From a Usability perspective, the forms should be designed so they are intuitive and easy to use, aiding users through the filling process, to helping them avoid making errors. Although, usability has many facets \cite{preece1994human}, one concern is for the mental workload(MWL) of the users \cite{bevan1997methods}, which is typically measured using retrospective-completed subjective forms \cite{nasatlx}. In this paper, however, we explore the use of an concurrent objective measure of MWL, fNIRS. Although research has demonstrated that this technology is suitable for user study conditions, the evidence has been based upon constrained psychology tasks like N-Back tests \cite{herff2013mental,ayaz2007detecting,molteni2008activation}. Here, we demonstrate that fNIRS can be easily integrated into typical usability testing, as we compare alternatives designs for an online insurance claim form.
 
-Mental workload is \emph{``the relationship between primary task performance and the resources demanded by the primary task''} \cite{wilson2015evaluation}. In their recent model of Mental Workload, Sharples and Megaw highlight that both high mental workload, and low mental workload can reduce performance ~\cite{wilson2015evaluation}. As a task complexity increases, performance reduces. Conversely, while a repetitive task that does not utilize a person's mental or physical resources may result in boredom and apathy \cite{afergan2014dynamic}, which also means that a user becomes prone to errors \cite{pekrun2010boredom}.
+Mental workload is \emph{``the relationship between primary task performance and the resources demanded by the primary task''} \cite{wilson2015evaluation}. In their recent model of MWL, Sharples and Megaw highlight that both, high and low MWL, can reduce performance ~\cite{wilson2015evaluation}. As a task complexity increases, performance reduces. Conversely, while a repetitive task that does not utilize a person's mental or physical resources may result in boredom and apathy \cite{afergan2014dynamic}, which also means that a user becomes prone to errors \cite{pekrun2010boredom}.
 %Web form filling tents to be a repetitive task which sometimes can become automatic.
 %If users reach such state, they might not only dislike the process or task of form filling, but they are 
 It is therefore important in the field of HCI evaluation and usability to understand users' capabilities and limitations, in order to assess the demands placed upon them.
@@ -13,31 +13,30 @@ It is therefore important in the field of HCI evaluation and usability to unders
 \begin{figure} [h]
 	\centering
 	\includegraphics[width=\linewidth]{../figures/layout-variations}
-	\caption{A sketch of the three web form layout variations investigated. Divided VS Positioning approach}
+	\caption{A sketch of the three web form layout variations investigated.}
 	\label{fig:layout-variations}
 \end{figure}
 
 The aim of this usability study is to evaluate a web form filling interface for the insurance domain, and we use the example of online auto insurance claim process.
-We therefore evaluate three variations in layout of the insurance claim form, as shown in Figure~\ref{fig:layout-variations}, and examine the effects of web form filling on users preference, emotional response, mental workload, and performance.
+We therefore evaluate three variations in layout of the insurance claim form, as shown in Figure~\ref{fig:layout-variations}, and examine the effects of web form filling on users preference, emotional response, workload, and performance.
 The first variation of the default web form examines whether summarizing at the beginning of an insurance claim form might make the whole process easier.
 The second, is looking at ways to make the form easier to fill and clearer by dividing the form fields into separate, sequential pages.
 
 
 \subsection{Usability and Web form filling}	
 Web form filling is often encountered activity in daily surfing of web users, however, according to our knowledge, there is scarce of \emph{empirical} research literature for this topic.
-Most of the research on web form filling and design is e.g. focused in optimizing the experience and accessibility for elderly population \cite{sayago2012selective,chadwick2003web,lines2006online,sayago2007some}.
+Most of the research on web form filling and design is focused in optimizing the experience and accessibility for elderly population \cite{sayago2012selective,chadwick2003web,lines2006online,sayago2007some}.
 W{\"a}stlund et al \cite{Wastlund20081229}, however, compared two web page layouts, one in which all the text is on the same page, and one where the text is separated in four pages, and concluded that users experienced less workload with the divided web form.
 Further research \cite{jarrett2009forms,wroblewski2008web} also suggest splitting long web forms into several pages, in order to improve the process.
-
-Further studies suggest that the longer it takes for a task to be completed (short or long term) the more the perceived frustration users experience \cite{mendoza2005usability,bessiere2004social}.
+It is suggested that the longer it takes for a task to be completed (short or long term) the more the perceived frustration users experience \cite{mendoza2005usability,bessiere2004social}.
 Therefore, time to complete also needs to be considered in this study.
 %In reviewing positive and negative affect and their implications for design Norman \cite{norman2002emotion} proposes that ``Positively valenced affect broadens the thought processes hence, enhanced creativity''. Therefore, increase in task performance should be observed when a user has positively valenced affect towards certain interface. Suggesting that emotional valence plays pivotal role in task performance.
 
-The usability of webforms, therefore, are often based upon the expertese of designers and usability guidelines and recommendations, as they are widely accepted in practice.
+The usability of webforms, therefore, are often based upon the expertise of designers and usability guidelines and recommendations, as they are widely accepted in practice.
 The two most popular usability heuristics are those of Nielsen \cite{nielsen1990heuristic}, and Shneidermann \cite{shneiderman1992designing}.
 They express similar suggestions, such as maintain consistency, provide feedback, support expert users, prevent and optimize error messages, provide help documentation, permit easy reversal of information, and minimize working memory load. %Designers, however, have
 %Consequently, the design of the tested variations in this study is informed by them.
-Because both heuristics advocate minimizing the load on working memory, we consider that reducing mental workload will provide better user experience. This, therefore, motivates our concern with being able to accurately measure mental workload, as most measures of Mental Workload are summative retrospective and subjective assessments provided by users after completing an entire task. With a concurrent objective measure, as proposed for fNIRS, ideally we would be able to examine the workload at different parts of the task, to combine with techniques like think aloud [REF us], in usability testing.
+Because both heuristics advocate minimizing the load on working memory, we consider that reducing MWL will provide better user experience. This, therefore, motivates our concern with being able to accurately measure MWL, as most measures are summative retrospective and subjective assessments provided by users after completing an entire task. With a concurrent objective measure, as proposed for fNIRS, ideally we would be able to examine the workload at different parts of the task, to combine with techniques like think aloud \cite{pike2014measuring}, in usability testing.
 %In addition, because usability of certain interface depends on the context, user differences, and that there is not perfect solution to a interface problem, and designers often have to make tradeoffs\cite{norman1986user}, we will rely on cognitive science in order, to predict which layout is more appropriate.
 
 
@@ -47,10 +46,11 @@ Because both heuristics advocate minimizing the load on working memory, we consi
 %They also discuss how user performance could be influenced by the mental workload, pointing out two causes: underload and overload.
 %A number of subjective and objective methods have been proposed for evaluating users workload, including primary and secondary task analysis, subjective questionnaires and physiological techniques.
 
-\textbf{Subjective measures} are based upon user opinions and capture the experienced users' efforts experienced during tasks.
+\textbf{Subjective measures} are based upon user opinions and capture the experienced users' efforts during tasks.
 Due to their simplicity, cheap running costs and high validity they tend to be the most used and accepted workload measures.
-One of the most used subjective technique is the multidimensional scale developed by Hart and Staveland \cite{nasatlx} NASA-TLX.
-Using the 6 sub-scales, it provides high diagnosticity, identifying different aspects of workload. Other such measures include SWAT \cite{reid1988subjective} and the Workload profile \cite{tsang1996diagnosticity}. Longo et al. \cite{longo2012importance} compared the three measures mentioned above in a web browsing/searching task, and observed correlations in the results of the three measures claiming that they measure the same concept of mental workload. One concurrent alternative is to poll users for their mental workload levels at 30s intervals during a task, using an Instantaneous Subjetive Assessment (ISA) \cite{brennan1992experimental}, however many have observered the interruption that this creates and that it often increases mental workload during tasks.
+One of the most used subjective technique is the multidimensional NASA-TLX scale \cite{nasatlx}.
+Using the 6 sub-scales, it provides high diagnosticity, identifying different aspects of workload. Other such measures include SWAT \cite{reid1988subjective} and the Workload profile \cite{tsang1996diagnosticity}. Longo et al. \cite{longo2012importance} compared the three measures mentioned above in a web browsing/searching task, and observed correlations in the results of the three measures claiming that they measure the same concept of workload. 
+%One concurrent alternative is to poll users for their mental workload levels at 30s intervals during a task, using an Instantaneous Subjective Assessment (ISA) \cite{brennan1992experimental}, however many have observed the interruption that this creates and that it often increases mental workload during tasks.
 
 %
 %Between the uni-dimensional scales, Cooper-Harper \cite{cooper1969use} is one of the most popular among ergonomists.
@@ -64,25 +64,19 @@ Using the 6 sub-scales, it provides high diagnosticity, identifying different as
 %Hence, it is very useful in dual task experiments. Finally, Longo et al. \cite{longo2012importance} compared the three measures mentioned above in a web browsing/searching task, and observed correlations in the results of the three measures claiming that they measure the same concept of mental workload.
 
 
-\textbf{Psychophysical measures} are used to give objective data about mental workload by not relying on subjective scales or performance measures.
+\textbf{Psychophysical measures} are used to give objective data about MWL by not relying on subjective scales or performance measures.
 They can be obtained by recording cardiac activity \cite{backs1994metabolic}, electrodermal activity \cite{collet2014measuring}, eye function \cite{beatty1982task}, imaging the brain \cite{balconi2015hemodynamic} and facial skin temperature \cite{stemberger2010thermal}.
-These techniques detect the  change in the arousal from the autonomic nervous system level which can be inferred to as mental workload.
-However, different psychophysical measures capture different aspects mental workload \cite{cain2007review}, therefore consideration should be put in choosing the most appropriate measure for the given task.
+These techniques detect the change in the arousal from the autonomic nervous system level which can be inferred to as MWL.
+However, different psychophysical measures capture different aspects workload \cite{cain2007review}, therefore consideration should be put in choosing the most appropriate measure for the given task.
 
 Recent research has shown that functional near infrared spectroscopy (fNIRS) is a suitable brain measurement technique for HCI studies \cite{maior2015examining,solovey2009using,pike2014measuring} as it provides useful information about the user while allowing for more normal interaction with a computer system.
 fNIRS uses blood oxygenation, rather than electrical levels that are affected by limb movement, for determining the activation of areas in the brain, where more blood flow indicates higher activity.
 This makes it non-invasive, portable, and suitable for periods of extended monitoring relative to other neuroimaging techniques.
-fNIRS measures the hemodynamic response the delivery of blood to active neuronal tissues and it is designed to be placed directly upon a participant's scalp, typically targeting the prefrontal cortex (PFC).
+fNIRS measures the delivery of blood to active neuronal tissues and it is designed to be placed directly upon a participant's scalp, typically targeting the prefrontal cortex (PFC).
 It has been suggested by cognitive neuroscience studies that PFC is involved in higher order cognition \cite{braver1997parametric} and emotion processing \cite{damasio1996somatic}. Peck et al \cite{peck2013using} used hemodynamic data from fNIRS to compare and evaluate different variations of an interface.
 He found a correlation between the fNIRS data and NASA-TLX which was further confirmed by Maior et al \cite{maior2014continuous}. 
 
-In this paper, we examine the prospect of using fNIRS to measure Mental Workload within a typical usability study. Although the work above has looked at using fNIRS in HCI user studies, it has all focused on proving its value using psychology experiments, even when comparing the value of pie and bar charts \cite{peck2013using}. Our primary contribution is to demonstrate how Mental Workload can be objectively measured during usability testing to evaluate user interfaces for form filling. Further, as a secondary contribution, we also demonstrate that fNIRS can translate from constrained examples to more natural tasks and still provide insight into Mental Workload.
-
-
-
-
-
-
+In this paper, we examine the prospect of using fNIRS to measure MWL within a typical usability study. Although the work above has looked at using fNIRS in HCI user studies, it has all focused on proving its value using psychology experiments, even when comparing the value of pie and bar charts \cite{peck2013using}. Our primary contribution is to demonstrate how MWL can be objectively measured during usability testing to evaluate user interfaces for form filling. Further, as a secondary contribution, we also demonstrate that fNIRS can translate from constrained examples to more natural tasks and still provide insight into MWL.
 \end{document}
 
 
