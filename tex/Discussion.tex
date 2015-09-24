@@ -1,7 +1,12 @@
 \documentclass[../main/Replicate.tex]{subfiles}
 \begin{document}
 \section{Discussion}
-	The purpose of this study was to improve usability of web form filling of insurance claims and find which of three web forms layouts elicited the least workload and suggest implications for design.
+	The purpose of this study was to improve usability of web form filling of insurance claims and find which of three web forms layouts elicited the least workload and suggest implications for design. Overall, we found that the designs of the forms did not create an emotional affect, and did not affect performance, per se, in terms of time. Further, we found that asking users to begin with, rather than finishing with summarising the accident (index2) did not create a significant different in Mental Workload within our study. Dividing the form into separate subforms (index3), however, increased mental workload, according to both objective and subjective measures. Of the three forms, 8 out of 15 users expressed their preference towards our baseline index1 condition. From herein, we focus on the difference single forms and dividing forms into subforms. 
+
+
+
+
+
 %	\subsubsection{Control condition - Index1}
 %	The purpose of this study was to improve usability of web form filling of insurance claims and find which of three web forms layouts was the most usable. When analysing the results it can be noted that index1 was the least mentally demanding web form, according to the mental demand scale of NASA-TLX, and objective measure of mean Hbo activation. However, the calculated total tlx indicated higher perceived workload than index2, and lower than index3. Index1 can be said to support the consistency heuristic\cite{nielsen1990heuristic} because it was the control condition and represented a standard insurance claim form. The comparatively low workload measured for index1 can be attributed to the fact that the task was familiar, and therefore participants had to spending less working memory resources on planning because the task sequence was already mapped in their brain. One participant supported this argument by saying: \textit{``I consider it more logical, like logical approach..to say who you are, what happened to your car and then what happened exactly, describe it from your own perspective.''}. Also, 4 users reported that the sequence of small question first, leading to the description at the end, helped them to recall the situation better: \textit{``I preferred the first(index1) and third(index3) examples, as they asked more general questions at the beginning. This made me think about what aspects to include in the event summary at the end, such as number of cars involved''}. Which means that the sequence of web forms or their order of presentation is important aspect to consider when designing long web forms.
 %	
@@ -16,48 +21,56 @@
 %	We found out that index3 to elicits the highest mental workload according to the fNIRS Hbo data, SAM arousal scale(significant difference with index1), total tlx, mental demand scale from NASA-TLX. Also, it takes the most time to complete the task compared to the rest of the conditions. However, index3 was evoking the highest positive valence(SAM), fNIRS differences were indicating more left hemisphere activation, and users preferred it the most when asked after the finish of the experiment. The results were contradictory according to the Norman\cite{norman2002emotion} positive affect should enhance operator creativity, thus increasing the performance.
 %	
 %	Also, it can be noted that perceived temporal demand for index3 was lower than index1 and index2(no statistical significance). This can be attributed to the fact that index3 had lower number of forms(visual cues) on each page. It can be inferred that the more web forms are present on an interface, the more the user perceives temporal demand because it appraises the situation as one that needs more work to be performed. This claim can be supported with the feedback from the participants: \textit{``so the second one(index3) I felt having to click the links broke it down a little bit, like you didn't have to think about everything in one go...''} or other user expressed \textit{``you give all the details and then you take your time to write about the incident so you don't feel very rushed or something''}. 
-	A division can be made between the web forms which contain all forms on one page(index1, index2), and web forms which are consolidated or divided on several pages(index3). We define these as the \textit{single page approach}, and the \textit{divided page approach}.
-	The single page approach elicited significantly less mental demand (objective and subjective) than the divided page approach. 
-	One explanation can be that with single page approach participants can go back and verify what information they have already entered: \textit{``I remember in the second one(index1) I'm not sure whether the option provided left or right, so I rechecked''}. 
-	This way working memory resources are saved because participants has the ability to quickly recheck what they have already entered, relying on recognition, rather than recall\cite{nielsen1990heuristic}. 
-	Another advantage of the single page approach is that participants can choose which form to start first: \textit{``the good thing about the number two(index1) is everything is on the same page I can choose whatever I like''}. 
-	Generally, some of the participants preferred to fill in the description field first, and then the rest of the forms, so researchers and practitioners have to give users the power to choose from where they can start. 
-	
+%	A division can be made between the web forms which contain all forms on one page(index1, index2), and web forms which are consolidated or divided on several pages(index3). We define these as the \textit{single page approach}, and the \textit{divided page approach}.
+%	The single page approach elicited significantly less mental demand (objective and subjective) than the divided page approach. 
+	One explanation for our findings is that a single form approach allows participants to go back and verify what information they have already entered: \textit{``I remember in the second one(index1) I'm not sure whether the option provided left or right, so I rechecked''}. 
+	This way working memory resources are saved because participants has the ability to quickly recheck what they have already entered, relying on recognition, rather than recall \cite{nielsen1990heuristic}. Further, work in information browsers has shown that spatial configurations have significant benefits over temporal layouts \cite{eps258800}. Although often discounted by Human Factors researchers [REF sarah book], an alternative model of Cognitive Load from the field of Education research [REF cognitive load book] also notes that temporal distance increases Cognitive Load, as users cannot cross-reference material.
+
+
+
 %	However, in our case the participants watched a recorded accident that they had to recall after approximately 2 minutes. In reality, the delay between the accident and the claim form filling will be much higher, thus the arrangement of the web forms depends on the time between the accident and the claim form filling.
 	
-	The results were contradictory to our expectations because we assumed that the divided page approach should reduce visual search and clutter, thus demand less attentional resources. 
-	Also, the more informational cues(web form fields) are present on an interface, the more time the user should spent on searching for information, thus the performance should drop. 
-	This claim can be supported with the feedback from the participants: \textit{``so the second one(index3) I felt having to click the links broke it down a little bit, like you didn't have to think about everything in one go...''}. 
-	However, the workload was the highest for the divided page approach. This can be attributed to the fact that some of the users did not liked navigating 3 pages to complete the process: \textit{And I like hate waiting for the next page, navigating to the next page so first one(index3)} due to \textit{the tasks were small, questions were small, so why do you need to navigate so many pages, two pages, three pages}. 
-	Which suggests that designers should take into consideration not just the number of fields but also their demand for working memory resources. 
-	This suggest that, if there is low number of form fields but they demand a lot of time and resources to complete, they could be divided into separate pages. 
-	In contrast, if we have high number of form fields which are easy to complete there could be no need for dividing them into separate pages.
+	Despite the perspective of these models, our results were contradictory to our expectations because the use of subforms is very popular in practice, and we assumed that the divided page approach should reduce visual search and clutter, thus demand less attentional resources. 
+	Also, the more informational cues (web form fields) are present on an interface, the more time the user should spent on searching for information, thus the performance should drop. 
+	This claim can be partially supported with the feedback from the participants: \textit{``so the second one(index3) I felt having to [navigate between subforms] broke it down a little bit, like you didn't have to think about everything in one go...''}. 
+%	However, the workload was the highest for the divided page approach. This can be attributed to the fact that some of the users did not liked navigating 3 pages to complete the process: 
+%Similarly, another participant said \textit{``And I like hate [navigating] to the next page so first one(index3)} due to \textit{the tasks were small, questions were small, so why do you need to navigate so many pages, two pages, three pages}. 
+%	This suggests that designers should take into consideration not just the number of fields but also their demand for working memory resources. 
 
-	Index1 and Index2 differed only by the positioning of the description field which was a textarea field. 
-	Index1 had the description at the end of the web form, and in index2 the description was at the beginning(see Figure \ref{layout-variations}). 
-	Only 3 participants preferred index2 and this can be explained by the fact that they were not used to write a summary in the beginning of the web form: \textit{I think asking small questions before the description let me remember better than the third one(index2)}. 
-	Thus we can say that the consistency heuristic is violated. 
-	However, we could not find significant difference between index2 and the rest of the conditions.	
+%	This suggest that, if there is low number of form fields but they demand a lot of time and resources to complete, they could be divided into separate pages. 
+%	In contrast, if we have high number of form fields which are easy to complete there could be no need for dividing them into separate pages.
+
+	Another advantage of the single page approach is that participants can choose which form to start first: \textit{``the good thing about the number two(index1) is everything is on the same page I can choose whatever I like''}. 
+	Generally, some of the participants preferred to fill in the description field first, and then the rest of the forms, so researchers and practitioners have to give users the power to choose from where they can start. Together, this insights indicate that future work should focus directly on the issue of creating optimal subforms, considering both the length of the form and the similarity of the focus of each subform. Its possible that the same study procedure will find that dividing a different form, of a different size, might reduce mental workload. Future work might also investigate the concern of flexibility, as a heuristic, allowing participants to easily start at the part of the form they prefer.
+
+%	Index1 and Index2 differed only by the positioning of the description field which was a textarea field. 
+%	Index1 had the description at the end of the web form, and in index2 the description was at the beginning(see Figure \ref{layout-variations}). 
+%	Only 3 participants preferred index2 and this can be explained by the fact that they were not used to write a summary in the beginning of the web form: \textit{I think asking small questions before the description let me remember better than the third one(index2)}. 
+%	Thus we can say that the consistency heuristic is violated. 
+%	However, we could not find significant difference between index2 and the rest of the conditions.	
 	
-	In our opinion, index1 is more suitable for implementation in our particular interface because it elicited less objective and subjective mental workload, and 8 out of 15 users expressed their preference towards it, and it took the least time for participants to complete the task. 
-	Single page approach was more suitable for this particular task, however, researchers should not infer that it is generally better than the divided page approach. 
-	As Norman stated \cite{norman1986user} every interface is influenced by different aspects like, context, skill level, culture, individual preferences, therefore every interface should be evaluated individually. 
+%	In our opinion, index1 is more suitable for implementation in our particular interface because it elicited less objective and subjective mental workload, and 8 out of 15 users expressed their preference towards it, and it took the least time for participants to complete the task. 
+%	Single page approach was more suitable for this particular task, however, researchers should not infer that it is generally better than the divided page approach. 
+%	As Norman stated \cite{norman1986user} every interface is influenced by different aspects like, context, skill level, culture, individual preferences, therefore every interface should be evaluated individually. 
 
 %	\textit{``because you don't have to think about the other forms''}. 
-	\subsection{Implications for Design}
-	Based on the obtained results we propose the following recommendations for design of long web forms:
-	\begin{itemize}
-		\setlength\itemsep{0em}
+%	\subsection{Implications for Design}
+%	Based on the obtained results we propose the following recommendations for design of long web forms:
+%	\begin{itemize}
+%		\setlength\itemsep{0em}
 %		\item Include visual representations of information where possible, rather than display it as text only:
 %		Some participants did not knew the names of the different car body parts due to language barrier.
 %		To address this problem, we propose that a visualisation of car divided on its main body parts should be depicted on the form in order to support recognition. 
 %		Thus, designers should offer visual representations of information which is difficult or it takes too much time to comprehend.
-		\item Sequence of web forms is important aspect to consider, so testing the order of presentation of forms may yield important information:
-		Some of the participants wanted to fill different form fields first, and scrolled down to find them. 
-		Consequently, researchers should consider the sequence of web forms: which questions to ask first, and which last in their web forms.
-		\item Divide a long web forms onto separate pages if the information entered in each field is not relative to the other fields, or when the users do not need to check what they have entered previously:
-		During the web form filling process it can be noted that participants occasionally inspect what they have written before, in order to verify that information or check what they had written before. 
-	\end{itemize}
+%		\item Sequence of web forms is important aspect to consider, so testing the order of presentation of forms may yield important information:
+%		Some of the participants wanted to fill different form fields first, and scrolled down to find them. 
+%		Consequently, researchers should consider the sequence of web forms: which questions to ask first, and which last in their web forms.
+%		\item Divide a long web forms onto separate pages if the information entered in each field is not relative to the other fields, or when the users do not need to check what they have entered previously:
+%		During the web form filling process it can be noted that participants occasionally inspect what they have written before, in order to verify that information or check what they had written before. 
+%	\end{itemize}
+
+%\subsection{fNIRS in Usability Studies}
+
 	
 %	\subsection{fNIRS practicality for HCI evaluations}	
 %	fNIRS provides useful data, however we can infer about design issues from user trials, and receive rich data for relatively less amount of money compared to the more expensive and time consuming fNIRS evaluation study. 
@@ -72,5 +85,7 @@
 %	\subsection{Future work}
 %	To produce more valid results, experiments without the inclusion of videos should be conducted. For example testing the insurance quote process, instead of claims. Also, the divided page approach should be further examined because it produced encouraging and positive results, except that it required the most attentional resources. However, as it is not clear which improves the user experience more, the workload experienced or the positive or negative appraisal of the interface, we should further test and diagnose the single versus divided page approaches.
 	\section{Conclusion}
-	In summary, we used fNIRS in a user study of the web form filling process. We aimed to obtain objective and subjective measurements of mental workload and then compare them. We tested the web page layout by producing 3 variations, in total of an online insurance claim form. After conducting the experiment the standard single page web form(index1), showed the least mental workload, according to the objective and subjective measures that we used to infer it. On the other hand, the web form which was divided on three separate pages, yielded highest workload. In addition, we outlined implications for design for long web forms.
+	In this paper, we explored the use of fNIRS as an objetive concurrent measure of Mental Workload within a typical usability testing procedure, and alongside other measures. In particular, we examined performance, emotional response, mental workload, and preference of three alternatives to a car insurance claim form. %We aimed to obtain objective and subjective measurements of mental workload and then compare them. We tested the web page layout by producing 3 variations, in total of an online insurance claim form. 
+%After conducting the experiment the standard single page web form(index1), showed the least mental workload, according to the objective and subjective measures that we used to infer it. On the other hand, the web form which was divided on three separate pages, yielded highest workload. In addition, we outlined implications for design for long web forms.
+While none of the conditions created performance or emotional differences, both subjective and objective measures concluded that dividing the form into subforms significantly increased mental workload on the task. This was contrary to our expectations based upon the prevelence of divided forms online. As a primary contribution, however, we show that fNIRS can be easily used within a usability evaluation and measure the mental workload differences that agree with subjective retrospective assessments. Importantly, however, this means that future work can examine how Mental Workload fluctuates during a task, because fNIRS generates a concurrent an ongoing measure of mental workload. Finally, as a secondary contribution, we also demonstrate that fNIRS can easily translate from the psychology tasks to natural form-filling tasks. This is an useful addendum to our findings, providing additional evdidence for the utility of fNIRS as a Mental Workload evaluation tool.
 \end{document}
