@@ -4,7 +4,7 @@
 %We used fNIRS because it is non-invasive with low sensitivity to motion artefacts, and with high temporal resolution, thus suitable for user trials. We combine the fNIRS, as an objective measure of mental workload with the subjective NASA-TLX as they are validated and reliable methods \cite{maior2015examining,hart2006nasa}. In addition, we decided to measure the emotional valence with the SAM questionnaire. This way we gather comprehensive information about how participants perceive the interfaces and relate it to the psychophysiological data. Furthermore, fNIRS is novel method for conducting usability studies, and as such we aim to assess its practicality.
 %This study was looking at this.... The study used repeated measures within subjects design.
 %The depended variable was the objective workload, and the independent variable was the layout of the three web forms.
-We chose to focus our study of form filling on a car insurance claim scenario, as it was a) an example of an important web form that people encounter in everyday lives, b) involves careful thought rather than just entering data, and c) was in line the real concerns of an industry partner that wants to make their service as easy to use as possible. Video clips of car accidents were used as the stimulus for filling in insurance claims during the study, with a time gap, such that participants had to recall aspects of the accidents. These video clips provided all the necessary data for filling in the forms.
+We chose to focus our study of form filling on a car insurance claim scenario, as it was a) an example of an important web form that people encounter in everyday lives, b) involves careful thought rather than just entering data, and c) was in line the real concerns of an industry partner that wants to make their service as easy to use as possible. Video clips of car accidents were used as the stimulus for filling in insurance claims during the study, with a time gap, such that participants had to recall aspects of the accidents. These video clips provided all the necessary data for filling in the forms, and were between 30-60s long.
 Further, the video clips were of low-speed accidents and were carefully chosen to be lightweight avoiding any scenes of gore, injured bodies, or fatalities. We compared three alternative designs, described below, and measured performance, time to complete, emotional responses, and MWL.
 
 \subsection{Layout variations of web forms}
@@ -18,10 +18,12 @@ The final part consisted of a text-area, where participants had to write an over
 
 Our control condition, Index1, was simply a form that contained all three parts on one page.
 %The first investigated layout, referred as index1, consisted of the three division areas laid out with the summary of accident at the end.
+Our experimental conditions were drawn from standard web form design recommendations \cite{wroblewski2008web}.
 The first experimental condition, Index2, tested the hypothesis that beginning with a general summary of the accident (part 3 at the top) would reduce the level of MWL overall for the form; summarising it would make subsequent box filling easier.
 The second experimental condition, Index3, tested the general design recommendation that breaking down a form into subforms (one for each part) would make it easier to fill out in stages.
-The accident description was placed at the end of the form. %had the same order as index1, with each division part situated on separate page (personal information on page 1, accident information on page 2 and summary on page 3).
+%The accident description was placed at the end of the form. %had the same order as index1, with each division part situated on separate page (personal information on page 1, accident information on page 2 and summary on page 3).
 Users navigated between the three parts of Index3 using a submit button with the label ``Next''.
+
 
 %\subsection{Participants}
 
@@ -34,8 +36,8 @@ The emitter-detector separation was 2.5cm and the sampling rate was 2Hz.
 The data from 3 participants was excluded due to recording problems.
 
 \textbf{Data Processing} was performed using fnirSoft \cite{ayazfunctional}.
-A low-pass filter with cut off frequencies of 0.1 Hz, was used in order to remove physiological noise.
-The fNIRS signal was then processed with modified Beer-Lambert law \cite{cope1988system}, in order to calculate HbO, Hbr and Hbt.
+A low-pass filter with cut off frequencies of 0.1 Hz, was used in order to remove high-frequency noise, physiological artefacts such as heartbeats and motion derived artefacts.
+The fNIRS signal was then processed with modified Beer-Lambert law \cite{cope1988system} in order to calculate HbO, Hbr and Hbt.
 The correlation based signal improvement (CBSI) \cite{cui2010functional} method was applied to remove motion artefacts.
 %\subsubsection{Feature Extraction/selection}
 After data preprocessing, the mean and standard deviation for Hbo, Hbr and Hbt data was calculated from all channels.
