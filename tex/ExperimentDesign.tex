@@ -4,7 +4,7 @@
 %We used fNIRS because it is non-invasive with low sensitivity to motion artefacts, and with high temporal resolution, thus suitable for user trials. We combine the fNIRS, as an objective measure of mental workload with the subjective NASA-TLX as they are validated and reliable methods \cite{maior2015examining,hart2006nasa}. In addition, we decided to measure the emotional valence with the SAM questionnaire. This way we gather comprehensive information about how participants perceive the interfaces and relate it to the psychophysiological data. Furthermore, fNIRS is novel method for conducting usability studies, and as such we aim to assess its practicality.
 %This study was looking at this.... The study used repeated measures within subjects design.
 %The depended variable was the objective workload, and the independent variable was the layout of the three web forms.
-We chose to focus our study of form filling on a car insurance claim scenario, as it was a) an example of an important web form that people encounter in everyday lives, b) involves careful thought rather than just entering data, and c) was in line the real concerns of an industry partner that wants to make their service as easy to use as possible. Video clips of car accidents were used as the stimulus for filling in insurance claims during the study, with a time gap, such that participants had to recall aspects of the accidents. These video clips provided all the necessary data for filling in the forms, and were between 30-60s long.
+We chose to focus our study of form filling on a car insurance claim scenario, as it was a) an example of an important web form that people encounter in everyday lives, b) involves careful thought rather than just entering data, and c) represents a current concern for the insurance industry. Video clips of car accidents were used as the stimulus for filling in insurance claims during the study, with a time gap, such that participants had to recall aspects of the accidents. These video clips provided all the necessary data for filling in the forms, and were between 30-60s long.
 Further, the video clips were of low-speed accidents and were carefully chosen to be lightweight avoiding any scenes of gore, injured bodies, or fatalities. We compared three alternative designs, described below, and measured performance, time to complete, emotional responses, and MWL.
 
 \subsection{Layout variations of web forms}
@@ -33,12 +33,13 @@ Aside from recording time to complete each task, hemodynamic data was recorded d
 The device consists of a headband with 4 infrared LED emitters and 10 infrared detectors, operating on 730nm and 850nm wavelengths.
 The combination between them was used to calculate 16 channels which can measure the associated oxygenated (HbO), deoxygenated (Hbr) and total (Hbt) haemoglobin concentration in the PFC.
 The emitter-detector separation was 2.5cm and the sampling rate was 2Hz.
-The data from 3 participants was excluded due to recording problems.
+
 
 \textbf{Data Processing} was performed using fnirSoft \cite{ayazfunctional}.
 A low-pass filter with cut off frequencies of 0.1 Hz, was used in order to remove high-frequency noise, physiological artefacts such as heartbeats and motion derived artefacts.
 The fNIRS signal was then processed with modified Beer-Lambert law \cite{cope1988system} in order to calculate HbO, Hbr and Hbt.
-The correlation based signal improvement (CBSI) \cite{cui2010functional} method was applied to remove motion artefacts.
+The correlation based signal improvement (CBSI) \cite{cui2010functional} method was applied to remove motion artefacts. 
+Using time markers we then divided the data into conditions (Index1, Index2, Index3 - are periods during which participants were filling the 3 versions of the web form).
 %\subsubsection{Feature Extraction/selection}
 After data preprocessing, the mean and standard deviation for Hbo, Hbr and Hbt data was calculated from all channels.
 %\begin{figure}[h]
@@ -51,7 +52,7 @@ After data preprocessing, the mean and standard deviation for Hbo, Hbr and Hbt d
 \subsection{Self-Reporting Measures}
 Nielsen and Levy \cite{nielsen1994measuring} advise researchers to use combination of subjective and objective data in usability studies, in order to identify bias and provide richer information about the process. Accordingly, we also examine related subjective measurements within our study. To assess operator perceived MWL we used the paper version of the multidimensional subjective workload scale NASA-TLX \cite{nasatlx}.
 The individual scales are presented in the following order: Mental demand, Physical demand, Temporal demand, Performance, Effort, and Frustration.
-The NASA-TLX scores were obtained from participants after completing each web form conditions. To capture participants emotional valence and arousal we used a 5 point Self Assessment Mankin (SAM) \cite{bradley1994measuring} after each video and form-filling condition.
+The NASA-TLX scores were obtained from participants after completing each web form condition. To capture participants emotional valence and arousal we used a 5 point Self Assessment Manikin (SAM) \cite{bradley1994measuring} after each video and form-filling condition.
 %The participants were asked to fill the questionnaire after each video watched.
 %First they state their emotional valence(negative or positive) by choosing between 1 and 5, where 5 is strongly perceived positive emotion, and 1 is considered strong negative emotion. Then, they fill the arousal level scale, where 1 indicates low perceived arousal or boredom, and 5 signifies high perceived arousal or high level of excitement. Each of the subscales is supported by image visualisations illustrating the affective state.
 
@@ -61,10 +62,10 @@ The NASA-TLX scores were obtained from participants after completing each web fo
 \subsection{Procedure}
 A total of 15 right handed participants (5 female) with mean age of 26 (SD = 4.71) were recruited from the University of Anonymous.
 %All of the participant were healthy,
-All participants were undergraduate or graduate students, had normal or corrected vision, and report no history of brain damage. %, however one suffered froom Von Willebraud disease, which impairs blood's ability to clot, and so their data was excluded from the study.
+All participants were undergraduate or graduate students, had normal or corrected vision, and reported no history of brain damage. %, however one suffered froom Von Willebraud disease, which impairs blood's ability to clot, and so their data was excluded from the study.
 %Fourteen of them reported they have advanced computer literacy, five of them stated average computer literacy and one did not answer this question.
 %All of the participants were current or graduated students. The ethics committee of the University of Nottingham approved this study.
-To begin with, informed consent was obtained from the participants. Then, when ready, the fNIRS headband was placed and calibrated using a period of rest, in order to obtain a baseline. Participants then followed the procedure shown by Figure \ref{fig:study-procedure}.
+To begin with, informed consent was obtained from the participants. Then, when ready, the fNIRS headband was placed and calibrated using a period of rest, in order to obtain a baseline. Participants then followed the procedure shown by Figure \ref{fig:study-procedure}. The data from 3 participants was excluded due to recording problems.
 
 
 \begin{figure}[h]
@@ -75,7 +76,7 @@ To begin with, informed consent was obtained from the participants. Then, when r
 \end{figure}
 
 
-The three study conditions were counterbalanced using a Latin square, to avoid learning effects. Within each condition, participants first viewed a video clip, and then filled in a SAM test. SAM answers were informally monitored, as well as casual conversation between conditions, to check that participants werent experiencing distress from watching the videos. After a 2-minute gap, to allow for the accident to begin to decay from working memory, participants proceeded to fill in the current form condition (also counterbalanced). To conclude the condition, participants filled in a NASA-TLX form and another SAM test.
+The three study conditions were counterbalanced using a Latin square, to avoid learning effects. Within each condition, participants first viewed a video clip, and then filled in a SAM test. SAM answers were informally monitored, as well as casual conversation between conditions, to check that participants were not experiencing distress from watching the videos. After a 2-minute gap, to allow for the accident to begin to decay from working memory, participants proceeded to fill in the current form condition (also counterbalanced). To conclude the condition, participants filled in a NASA-TLX form and another SAM test.
 %Also, because of ethical considerations that the participant should not enter personal data in the web form, a artificial personal credentials were provided, that she should fill in the web forms.
 %Fourth, after the video capture and the fNIRS device were started, participants were asked to relax, in order to record a baseline of the hemodynamic activity while participants are at rest. Next, they are asked to open one of the three videos, depending on the counterbalancing order.
 %They were instructed by the researcher to manually start certain condition or video.
