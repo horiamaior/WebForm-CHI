@@ -9,6 +9,8 @@
 % 
 % CHANGELOG: 
 %
+% 2015-12-10 Daniel Ashbrook Switch 7-bit fonts to 8-bit
+%
 % 2015-03-21 David A. Shamma Updating for new format and Github
 % repo for CHI 2016.
 %
@@ -423,24 +425,24 @@
 % *** THIS BLOCK FOR THOSE USING METAFONT *****
 % *********************************************
 % notes: 7t fonts are 7-bit latex, 8t fonts are T1 fonts
-\newfont{\secfnt}{phvb7t at 9pt}                    % 05-16-2006 atd
-\newfont{\secit}{phvbo7t at 9pt}                    % 05-16-2006 atd
-\newfont{\subsecfnt}{phvro7t at 9pt}                    % 05-16-2006 atd
-\newfont{\subsecit}{phvr7t at 9pt}                    % 05-16-2006 atd
-\newfont{\ttlfnt}{phvb7t at 18pt}                    % 05-16-2006 atd
-\newfont{\ttlit}{phvbo7t at 18pt}                    % 05-16-2006 atd
-\newfont{\subttlfnt}{phvr7t at 14pt}                    % 05-16-2006 atd
-\newfont{\subttlit}{phvro7t at 14pt}                     % 05-16-2006 atd
-\newfont{\subttlbf}{phvb7t at 14pt}                    % 05-16-2006 atd
-\newfont{\aufnt}{ptmb7t at 12pt}                    % 05-16-2006 atd
-\newfont{\auit}{ptmbo7t at 12pt}                    % 05-16-2006 atd
-\newfont{\affaddr}{ptmr7t at 12pt}                    % 05-16-2006 atd
-\newfont{\affaddrit}{ptmro7t at 12pt}                    % 05-16-2006 atd
-\newfont{\eaddfnt}{ptmr7t at 12pt}                    % 05-16-2006 atd
-\newfont{\ixpt}{ptmr7t at 10pt}                    % 05-16-2006 atd
-\newfont{\confname}{ptmri7t at 8pt}                    % 05-16-2006 atd
-\newfont{\crnotice}{ptmr7t at 8pt}                    % 05-16-2006 atd
-\newfont{\ninept}{ptmr7t at 10pt}                    % 05-16-2006 atd
+\newfont{\secfnt}{phvb8t at 9pt}
+\newfont{\secit}{phvbo8t at 9pt}
+\newfont{\subsecfnt}{phvro8t at 9pt}
+\newfont{\subsecit}{phvr8t at 9pt}
+\newfont{\ttlfnt}{phvb8t at 18pt}
+\newfont{\ttlit}{phvbo8t at 18pt}
+\newfont{\subttlfnt}{phvr8t at 14pt}
+\newfont{\subttlit}{phvro8t at 14pt}
+\newfont{\subttlbf}{phvb8t at 14pt}
+\newfont{\aufnt}{ptmb8t at 12pt}
+\newfont{\auit}{ptmbo8t at 12pt}
+\newfont{\affaddr}{ptmr8t at 12pt}
+\newfont{\affaddrit}{ptmro8t at 12pt}
+\newfont{\eaddfnt}{ptmr8t at 12pt}
+\newfont{\ixpt}{ptmr8t at 10pt}
+\newfont{\confname}{ptmri8t at 8pt}
+\newfont{\crnotice}{ptmr8t at 8pt}
+\newfont{\ninept}{ptmr8t at 10pt}
 % +++++++++++++++++++++++++++++++++++++++++++++
 % -- End of block C --
 
@@ -455,7 +457,7 @@
 \newcount\sectioncntr
 \global\sectioncntr=1
 
-\setcounter{secnumdepth}{3}
+\setcounter{secnumdepth}{0}
 
 \def\appendix{\par
 \section*{APPENDIX}
@@ -659,7 +661,7 @@
 \def\ext@figure{lof}
 \def\fnum@figure{Figure \thefigure}
 \def\figure{\@float{figure}}
-\let\endfigure\end@float
+\def\endfigure{\end@float}
 \@namedef{figure*}{\@dblfloat{figure}}
 \@namedef{endfigure*}{\end@dblfloat}
 
@@ -670,7 +672,7 @@
 \def\ext@table{lot}
 \def\fnum@table{Table \thetable}
 \def\table{\@float{table}}
-\let\endtable\end@float
+\def\endtable{\end@float}
 \@namedef{table*}{\@dblfloat{table}}
 \@namedef{endtable*}{\end@dblfloat}
 
@@ -1095,8 +1097,6 @@
 %% NOTE: OK to use old-style font commands below, since they were
 %% suitably redefined for LaTeX2e
 %% END CHANGES
-%\setcounter{secnumdepth}{3}
-\setcounter{secnumdepth}{-2} % DLC
 \def\part{%
     \@startsection{part}{9}{\z@}{-10\p@ \@plus -4\p@ \@minus -2\p@}
         {4\p@}{\normalsize\@ucheadtrue}%
@@ -1177,7 +1177,7 @@
 
 \def\@sect#1#2#3#4#5#6[#7]#8{%
     \ifnum #2>\c@secnumdepth
-        \let\@svsec\@empty
+        \let\@svsec\@\refstepcounter{#1}
     \else
         \refstepcounter{#1}%
         \edef\@svsec{%
@@ -1408,8 +1408,15 @@
 \bibsep 2pt \@plus 1pt \@minus 1pt % [jdf] initial spacing between ref entries
 \setcounter{enumi}{1}
 \def\thebibliography#1{%
+%% Comment this to have blue DOI links.
+\makeatletter
+\def\url@leostyle{% 
+\@ifundefined{selectfont}{\def\UrlFont{\sf}}{\def\UrlFont{\color{black}\small\bf\ttfamily}}}
+\makeatother
+\urlstyle{leo}
+%%
     \section{%
-       {REFERENCES}
+       {References}
         \@mkboth{{\refname}}{{\refname}}%
     }%
 %    \list{[\arabic{enumi}]}{%
